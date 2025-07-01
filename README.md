@@ -22,12 +22,12 @@ A secure and intelligent chatbot for answering cybersecurity-related questions u
 |------------------------|-------------------------|
 | Vector DB              | `ChromaDB`              |
 | Embeddings             | `sentence-transformers` |
-| LLM                    | `Groq`, `OpenAI`, or `Cohere` (Pluggable) |
+| LLM                    | `Groq` |
 | RAG Logic              | `LangChain`             |
 | UI                     | `Streamlit`             |
 | File Parsing           | `PyPDF`, `LangChain`    |
 | Memory + Chat History  | `LangChain` Message Store |
-| Re-ranking             | `Cross-encoder` (optional) |
+| Re-ranking             | `Cohere` |
 
 ---
 
@@ -67,7 +67,7 @@ Cybersecurity-RAG-Chatbot/
 6. **RAG Generation**  
    → Retrieved chunks + question are passed to the LLM to generate a grounded answer.
 
-7. **Chat Memory (Optional)**  
+7. **Chat Memory**  
    → Keeps track of previous questions/answers to allow contextual conversation.
 
 ---
@@ -106,7 +106,7 @@ streamlit run app.py
 
 ```env
 HUGGINGFACEHUB_API_TOKEN=your_hf_token
-OPENAI_API_KEY=your_openai_key
+COHERE_API_KEY=your_cohere_key
 GROQ_API_KEY=your_groq_key
 ```
 
