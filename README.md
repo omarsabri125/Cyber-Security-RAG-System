@@ -42,7 +42,7 @@ Cybersecurity-RAG-Chatbot/
 ├── .env.example               # Sample environment variables
 ├── README.md                  # Project documentation (this file)
 └── data/
-    └── sample.pdf             # Example input document (optional)
+    └── Introduction to Cybersecurity.pdf             # Example input document
 ```
 
 ---
@@ -76,8 +76,8 @@ Cybersecurity-RAG-Chatbot/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/cybersecurity-rag-chatbot.git
-cd cybersecurity-rag-chatbot
+git clone https://github.com/omarsabri125/Cyber-Security-RAG-System.git
+cd Cyber-Security-RAG-System
 
 # Install dependencies
 pip install -r requirements.txt
