@@ -27,7 +27,7 @@ A secure and intelligent chatbot for answering cybersecurity-related questions u
 | UI                     | `Streamlit`             |
 | File Parsing           | `PyPDF`, `LangChain`    |
 | Memory + Chat History  | `LangChain` Message Store |
-| Re-ranking             | `Cohere` |
+| Re-ranking             | `Cohere Rerank` |
 
 ---
 
@@ -61,8 +61,8 @@ Cybersecurity-RAG-Chatbot/
 4. **Ask a Question**  
    → The user types a cybersecurity-related question.
 
-5. **Retriever + (Optional) Reranker**  
-   → Top-k most relevant chunks are fetched based on similarity. Reranker (e.g. cross-encoder) improves quality.
+5. **Retriever + Reranker**  
+   → Top-k most relevant chunks are fetched based on similarity. Reranker (Cohere Rerank) improves quality.
 
 6. **RAG Generation**  
    → Retrieved chunks + question are passed to the LLM to generate a grounded answer.
